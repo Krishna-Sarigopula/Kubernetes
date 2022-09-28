@@ -1,0 +1,14 @@
+Kubernetes   also called k8s  
+	between k and s 8 letters
+
+docker is container creator
+Kubernetes is orchestrator/manager of containers 
+
+pods & nodes
+ --containers wrapped with functional unit called pods
+-- pods contains multiple containers
+--node can contain multiple pods
+--pods host inside of node
+
+pods that have the same set of functions are abstracted insto sets called services
+pod have own IP addresses and single DNS name set of pods
