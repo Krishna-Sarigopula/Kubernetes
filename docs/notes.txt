@@ -12,3 +12,36 @@ pods & nodes
 
 pods that have the same set of functions are abstracted insto sets called services
 pod have own IP addresses and single DNS name set of pods
+
+architecture
+	master
+	cluster
+	worker nodes
+
+master & worker nodes called cluster
+cluster set of machines called nodes
+
+node can be 
+	physical machine
+	VM
+	VM on cloud
+nodes will have pods 
+pods will have containers
+
+
+clusetr -- nodes -- pods -- master
+
+matsre node responsibilites
+	manag the cluster
+	moniter nodes
+	moved failed worknodes to another nodes
+
+Components
+	API Server   - kubectl & ui
+	Scheduler   - schedule pods & nodes 
+	controller manager - runs controllers [Node contoller, replication, endpoints and service & token controllers]
+	ECTD - distributed key-value databases from core os
+
+	kubectl written on GO language
+
+
