@@ -36,12 +36,19 @@ matsre node responsibilites
 	moniter nodes
 	moved failed worknodes to another nodes
 
-Components
+matsre node Components
 	API Server   - kubectl & ui
 	Scheduler   - schedule pods & nodes 
 	controller manager - runs controllers [Node contoller, replication, endpoints and service & token controllers]
 	ECTD - distributed key-value databases from core os
 
 	kubectl written on GO language
+	
+Worker node components
+	kubelet  - it is an agent running on each node communicates with components from the master node and health nodes, in case of issue it restart the pod in same node or 	another node
+	kube-proxy  -- runs on each node and maintains network config & rules and watches the API server to removal additonal/remove service endpoints
+	container run time --  software for resposible for runnign the container docker is most common
+	
+
 
 
