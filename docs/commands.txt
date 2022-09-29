@@ -1,0 +1,10 @@
+
+kubectl apply -f {yaml-file-name} // add deployment/service
+kubectl delete -f  {yaml-file-name}  //delete deployment
+kubectl delete deployment {deployment-name}  //delete deployment
+kubectl get deployments // get deployments
+kubectl get pods //
+kubectl get pod -o wide //
+kubectl get services //
+kubectl describe service {service-name}//
+kubectl get deployment {deployment-name} -0 yaml 

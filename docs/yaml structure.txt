@@ -1,0 +1,30 @@
+
+each yaml file has 3 sections
+
+declaring part  -- apiVersion, kind
+1) metadata  -- name, labels
+2)specifications -- replicas, ports, template, container, selector, matchlabels
+3) status -- added by kubernetes
+
+* strict about indentation 
+* store with in same code respositories 
+
+Deployment manages PODS
+inside of deployment metadata ( ex: template section) applies to POD
+	name, image
+
+Connect deployement to pods throguh with labels 
+connect deployment to services through selectors
+
+PORTS in deployment & service
+
+deployment
+	ports:
+		-containerPort:8080
+service
+	ports:
+		-protocal:TCP
+		port:80
+		targetPort: 8080
+
+*targetPort & containerPort should match

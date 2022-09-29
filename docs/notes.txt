@@ -40,7 +40,7 @@ Components
 	API Server   - kubectl & ui
 	Scheduler   - schedule pods & nodes 
 	controller manager - runs controllers [Node contoller, replication, endpoints and service & token controllers]
-	ECTD - distributed key-value databases from core os
+	ECTD - distributed key-value databases from core os. also called cluster brain and tracks cluster changes
 
 	kubectl written on GO language
 
