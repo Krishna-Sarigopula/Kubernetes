@@ -28,3 +28,40 @@ service
 		targetPort: 8080
 
 *targetPort & containerPort should match
+
+array examples
+
+names:
+	-krishn
+	-man
+	-pasi
+
+OR
+
+names:["kris", "mana", "pasi"]
+
+Object examples
+
+details:
+	-name: "krishna"
+	email: "mana@m.com"
+
+OR
+
+details:
+	-{name: "krishna", email: "mana@m.com"}
+
+short_description: >
+	here is short 
+	description yaml
+
+variables example
+	price: &price 190
+	process_payment: *price
+
+object ref
+	student: &student
+		-name: "krishna"
+		email:"e@e.com"
+
+	process_payment: <<*student
